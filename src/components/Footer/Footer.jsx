@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { VscGithub } from "react-icons/vsc";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { MdPhoneMissed } from "react-icons/md";
 import {
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
@@ -9,6 +11,11 @@ import {
 import footerLogo from "../../assets/food-logo.png";
 
 const Footer = () => {
+
+  const openInNewWindow = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="bg-gray-100 dark:bg-gray-950">
       <section className="max-w-[1200px] mx-auto">
@@ -19,28 +26,28 @@ const Footer = () => {
               Rester
             </h1>
             <p className="">
-            restaurant, establishment where refreshments or meals may be procured by the public. The public dining room that ultimately came to be known as the restaurant originated .{" "}
+            Restaurant, establishment where refreshments or meals may be procured by the public. {" "}
             </p>
             <br />
             <div className="flex items-center gap-3">
-              <FaLocationArrow />
+              <FaMapLocationDot />
               <p>Dehradun, Uttarakhand </p>
             </div>
             <div className="flex items-center gap-3 mt-3">
-              <FaMobileAlt />
+              <MdPhoneMissed />
               <p>+91 9756964307</p>
             </div>
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">
-              <a href="#">
-                <FaInstagram className="text-3xl" />
-              </a>
-              <a href="#">
-                <FaFacebook className="text-3xl" />
-              </a>
-              <a href="#">
-                <FaLinkedin className="text-3xl" />
-              </a>
+            <a href="#" onClick={() => openInNewWindow("https://github.com/rahul2k21")}>
+        <VscGithub className="text-3xl" />
+      </a>
+      <a href="#" onClick={() => openInNewWindow('https://www.linkedin.com/in/rahul-mandal-953919245')}>
+        <FaLinkedin className="text-3xl" />
+      </a>
+      <a href="#" onClick={() => openInNewWindow('https://instagram.com')}>
+        <FaInstagram className="text-3xl" />
+      </a>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
