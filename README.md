@@ -1,4 +1,4 @@
-
+its fully animated food website using React js & Tailwind Css 
 
 Rester Food Website :  https://food-rester-k3qsy8j2a-rahul-s-projects-c6ddf6d0.vercel.app/
 
