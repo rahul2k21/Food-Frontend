@@ -4,11 +4,13 @@ import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services.jsx";
 import Banner from "./components/Banner/Banner.jsx";
 import AppStore from "./components/AppStore/Appstore.jsx";
-// import CoverBanner from "./components/CoverBanner/CoverBanner.jsx";
 import Testimonial from "./components/Testimonial/Testimonial.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Contact from "./components/Contact/Contact.jsx";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 const App = () => {
   React.useEffect(() => {
@@ -30,6 +32,10 @@ const App = () => {
       <AppStore />
       <Testimonial />
       <Footer />
+      <Contact/>
+   
+
+
     </div>
   );
 };

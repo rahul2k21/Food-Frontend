@@ -6,23 +6,24 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonialData = [
   {
     id: 1,
-    name: "Samuel",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    name: "Alice Johnson",
+    text: "Alice had a wonderful experience and highly recommends our services to others.",
+    img: "https://picsum.photos/104/104",
   },
   {
     id: 2,
-    name: "John Doe",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    name: "Bob Smith",
+    text: "Bob found our team to be professional and very helpful throughout the process.",
+    img: "https://picsum.photos/105/105",
   },
   {
     id: 3,
-    name: "Smith",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    name: "Carol Williams",
+    text: "Carol was impressed with the quality and efficiency of our work.",
+    img: "https://picsum.photos/106/106",
   },
 ];
+
 
 const Testimonial = () => {
   var settings = {
@@ -54,7 +55,7 @@ const Testimonial = () => {
         <div
           data-aos="zoom-in"
           data-aos-duration="300"
-          className="grid grid-cols-1 max-w-[600px] mx-auto gap-6"
+          className="grid grid-cols-1 max-w-[800px] mx-auto gap-6"
         >
           <Slider {...settings}>
             {testimonialData.map((data) => (
