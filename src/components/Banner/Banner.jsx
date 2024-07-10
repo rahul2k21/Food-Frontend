@@ -30,7 +30,7 @@ const Banner = () => {
                 <img
                   src={BiryaniImg}
                   alt="biryani img"
-                  className="max-w-[430px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)]"
+                  className="max-w-[430px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)]  hover:scale-105 duration-300 "
                 />
               </div>
               {/* text content section */}
@@ -59,7 +59,7 @@ const Banner = () => {
                   </div>
                 </div>
                 <div>
-                  <button className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full shadow-xl hover:shadow-md">
+                  <button className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 duration-300  py-2 px-4 rounded-full shadow-xl hover:shadow-md">
                     Order Now
                   </button>
                 </div>

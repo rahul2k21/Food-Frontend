@@ -50,47 +50,34 @@ const Footer = () => {
       </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
+          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-16 ">
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
+                  ABOUT
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
-                  <li className="cursor-pointer">Home</li>
+                  <li className="cursor-pointer">Project</li>
                   <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
+                  <li className="cursor-pointer">Blog</li>
+                  <li className="cursor-pointer">Awards</li>
                 </ul>
               </div>
             </div>
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Links
+                  ADDRESS
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
+                  <li className="cursor-pointer">Dehradun,248007</li>
+                  <li className="cursor-pointer">Uttarakhand</li>
+                  <li className="cursor-pointer">rahul2k21@gmail.com</li>
+                  <li className="cursor-pointer">9548979279</li>
                 </ul>
               </div>
             </div>
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Links
-                </h1>
-                {/* <ul className="list-disc list-inside"> */}
-                <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
-                </ul>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div>

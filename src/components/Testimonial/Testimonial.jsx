@@ -24,7 +24,6 @@ const testimonialData = [
   },
 ];
 
-
 const Testimonial = () => {
   var settings = {
     dots: true,
@@ -39,17 +38,17 @@ const Testimonial = () => {
     pauseOnHover: true,
     pauseOnFocus: true,
   };
+
   return (
     <div data-aos="fade-up" data-aos-duration="300" className="py-10">
       <div className="container">
-        <div className="text-center mb-20 max-w-[400px] mx-auto">
+        <div className="text-center mb-14 max-w-[400px] mx-auto">
           <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
             What our customers say
           </p>
           <h1 className="text-3xl font-bold">Testimonial</h1>
-          <p className="text-xs text-gray-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis delectus architecto error nesciunt,
+          <p className="text-md text-gray-400">
+          You made it so simple. My new site is so much faster and easier to work with than my old site.
           </p>
         </div>
         <div
@@ -59,14 +58,14 @@ const Testimonial = () => {
         >
           <Slider {...settings}>
             {testimonialData.map((data) => (
-              <div className="my-6" key={data.id}>
-                <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
+              <div className="my-10" key={data.id}>
+                <div className="flex flex-col justify-center items-center gap-6 text-center shadow-lg p-6 mx-10 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                   <img
                     className="rounded-full block mx-auto"
                     src={data.img}
                     alt=""
                   />
-                  <p className="text-gray-500 text-sm">{data.text}</p>
+                  <p className="text-gray-500 text-md">{data.text}</p>
                   <h1 className="text-xl font-bold">{data.name}</h1>
                   <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                     ,,
