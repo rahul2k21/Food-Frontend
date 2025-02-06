@@ -1,11 +1,10 @@
-import React from "react";
 
 function Contact() {
   return (
     <div>
       <div className="relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-          <div className="mt-8 overflow-hidden">
+          <div className="mt-5 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
                 <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
@@ -15,26 +14,17 @@ function Contact() {
                   Fill in the form to start a conversation
                 </p>
 
-                <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
-                  {/* <!-- Address information here --> */}
-                </div>
-
                 <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     className="w-8 h-8 text-gray-500"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
+                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-40">
                     +91 9756964307
@@ -45,21 +35,16 @@ function Contact() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     className="w-8 h-8 text-gray-500"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    <a href="https://veilmail.io/irish-geoff">
+                    <a href="mailto:rahulmandal2k21@gmail.com">
                       rahulmandal2k21@gmail.com
                     </a>
                   </div>
@@ -72,11 +57,11 @@ function Contact() {
                 className="p-6 flex flex-col justify-center"
               >
                 <div className="flex flex-col">
-                  <label for="name" className="hidden">
+                  <label htmlFor="name" className="hidden">
                     Full Name
                   </label>
                   <input
-                    type="name"
+                    type="text"
                     name="name"
                     id="name"
                     placeholder="Full Name"
@@ -85,7 +70,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col mt-2">
-                  <label for="email" className="hidden">
+                  <label htmlFor="email" className="hidden">
                     Email
                   </label>
                   <input
@@ -98,7 +83,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col mt-2">
-                  <label for="message" className="hidden">
+                  <label htmlFor="message" className="hidden">
                     Message
                   </label>
                   <textarea
@@ -111,11 +96,11 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="md:w-32 bg-black hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
+                  className="md:w-32 bg-black text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
                 >
                   Submit
                 </button>
-                <p classNameName="leading-relaxed text-xl text-gray-900 mt-8">
+                <p className="leading-relaxed text-xl text-gray-900 mt-8">
                   We use VeilMail.io to{" "}
                   <a
                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
