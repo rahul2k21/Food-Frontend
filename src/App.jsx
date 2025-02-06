@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact/Contact.jsx";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 const App = () => {
@@ -33,9 +32,6 @@ const App = () => {
       <Testimonial />
       <Footer />
       <Contact/>
-   
-
-
     </div>
   );
 };
